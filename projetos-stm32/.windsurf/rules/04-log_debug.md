@@ -1,11 +1,16 @@
 ---
-trigger: model_decision
+trigger: always_on
 description: Aplicar quando estiver lidando com saidas de Logs, padronizando o logger do sistema, não importa a linguagem.
 ---
 
 ## **Depuração e Log**
 
 A depuração é uma parte essencial do desenvolvimento de sistemas embarcados e aplicações em Node.js. Todas as mensagens de log devem ser **claras, informativas, didáticas e agrupadas por contexto**, de forma a facilitar o diagnóstico e o rastreamento de eventos em tempo real.
+
+---
+### **Uso do printf para depurar**
+
+Sempre use o printf, a não ser que seja solicitado para não usar, escreva o código necessário para usa-lo com a porta serial padrão, das placas Cube.
 
 ---
 

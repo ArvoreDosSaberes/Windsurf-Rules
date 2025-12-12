@@ -1,26 +1,23 @@
 ---
-trigger: always_on
+trigger: model_decision
 description: Deve ser sempre observada para criação de documentação e sua manteunção (atualização)
 ---
-
 ## Documentação (princípios)
 
-* **Documente sempre**: variáveis, parâmetros, constantes, funções e classes.
 * **Explique decisões**: registre a motivação de algoritmos, estruturas e blocos de código (trade-offs, complexidade, limites).
 * **Tom didático**: escreva de forma clara e instrutiva, acessível a quem é leigo.
 * **Idioma**: toda a documentação em **português brasileiro**.
 * **Localização**: mantenha a documentação em `./docs/` na raiz do projeto.
 
-### Boas práticas de anotação no código
-
-* **JavaScript/TypeScript**: use **JSDoc**/**TypeDoc** em funções, classes e módulos.
-* **C/C++ (firmware)**: use **Doxygen** nas APIs públicas e módulos críticos.
-* **Estrutura mínima de docstring/JSDoc**: objetivo, parâmetros, retorno, erros, efeitos colaterais, complexidade (quando relevante) e links para specs internas.
-
 ---
+
 ## README.md principal
 
-O readme principal deve conter o título do porjeto por extensão com palavras separadas por espaços.
+O readme principal deve conter o título do projeto com palavras separadas por espaços.
+
+Deve conter uma seção que descreva o projeto e seu propósito.
+
+Deve conter uma seção que informa as bibliotecas usadas, consulte cmakelists.txt para obter as informações. Além disso verifique o arquivo .gitmodules para obter os submódulos do projeto.
 
 Deve conter os badges do git hub, com linguagem usada,  a Licença usada, seguindo o exemplo a seguir:
 
@@ -35,7 +32,6 @@ Deve conter os badges do git hub, com linguagem usada,  a Licença usada, seguin
 [![ESP32-H2](https://img.shields.io/badge/ESP32--H2-Supported-green.svg)](https://www.espressif.com/en/products/socs/esp32-h2)
 [![GitHub](https://img.shields.io/github/stars/ArvoreDosSaberes/esp-i2c-scanner?style=social)](https://github.com/ArvoreDosSaberes/esp-i2c-scanner)
 [![GitHub Issues](https://img.shields.io/github/issues/ArvoreDosSaberes/esp-i2c-scanner)](https://github.com/ArvoreDosSaberes/esp-i2c-scanner/issues)
-
 
 ## Licença do projeto
 
@@ -118,6 +114,7 @@ Para **cada** provedor, criar um arquivo em `docs/integrations/<provedor>.md` co
 * Riscos e mitigação
 * Plano de testes e validação
 * Plano de rollout/rollback
+
 ### `CHANGELOG.md` (por fim)
 
 * Use o formato cronológico com entradas agrupadas por versão:
@@ -145,21 +142,3 @@ Para **cada** provedor, criar um arquivo em `docs/integrations/<provedor>.md` co
 
 > Sempre atualizar `CHANGELOG.md` e tags no repositório ao alterar a versão.
 
----
-
-## Checklists operacionais
-
-**Pull Request**
-
-* [ ] Código comentado com JSDoc/Doxygen onde necessário
-* [ ] Atualização em `docs/` quando há mudança de comportamento
-* [ ] Testes passam localmente e no CI
-* [ ] `CHANGELOG.md` atualizado
-* [ ] Version bump conforme política `x.y.z`
-
-**Release**
-
-* [ ] `CHANGELOG.md` final revisado
-* [ ] Tag criada e assinada (se aplicável)
-* [ ] Artefatos de build anexados (se houver)
-* [ ] Documentação de integração/deploy validada
