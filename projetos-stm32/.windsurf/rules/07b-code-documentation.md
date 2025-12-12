@@ -2,7 +2,6 @@
 trigger: always_on
 description: Deve ser observada para documentação de código
 ---
-
 ## Documentação de código
 
 * **Documente sempre**: variáveis, parâmetros, constantes, funções e classes, no código.
@@ -10,6 +9,7 @@ description: Deve ser observada para documentação de código
 * **Tom didático**: escreva de forma clara e instrutiva, acessível a quem é leigo.
 * **Idioma**: toda a documentação em **português brasileiro**.
 * **Localização**: mantenha a documentação em `./docs/` na raiz do projeto.
+* **Copyrigth:** Respeite sempre as licenças originais e o copyrigth para todos os documentos e código fonte. Mantendo o original
 
 ### Boas práticas de anotação no código
 
@@ -22,3 +22,11 @@ description: Deve ser observada para documentação de código
 * Escreva para **leigos** conseguirem **reproduzir tarefas** sem suporte.
 * Use **passos numerados**, **capturas de tela** quando necessário e **tabelas** para variáveis/URLs.
 * Destaque **avisos importantes** (e.g., segurança, limites de API).
+
+## Licença do projeto
+
+O arquivo deve conter a licença usada, se nenhuma licença for infomrada comece com a CC-BY-4.0. Crie um arquivo chamado `LICENSE.`
+
+Adicione Carlos Delfino Carvalho Pinheiro (https://carlosdelfino.eti.br e consultoria@carlosdelfino.eti.br) como atual desenvolvedor do código ou ajustes realizados.
+
+Adicione https://mcu.tec.br como site de referência com artigos relevantes sobre MCU e FPGA.

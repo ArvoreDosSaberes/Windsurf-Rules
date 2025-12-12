@@ -8,6 +8,8 @@ description: Deve ser sempre observada para criação de documentação e sua ma
 * **Tom didático**: escreva de forma clara e instrutiva, acessível a quem é leigo.
 * **Idioma**: toda a documentação em **português brasileiro**.
 * **Localização**: mantenha a documentação em `./docs/` na raiz do projeto.
+* **Atualização:** Existindo os arquivos, leia-os e atualize seu conteúdo, ajustando o texto existente.
+* **Copyrigth:** Respeite sempre as licenças originais e o copyrigth para todos os documentos e código fonte. Mantendo o original
 
 ---
 
@@ -33,9 +35,15 @@ Deve conter os badges do git hub, com linguagem usada,  a Licença usada, seguin
 [![GitHub](https://img.shields.io/github/stars/ArvoreDosSaberes/esp-i2c-scanner?style=social)](https://github.com/ArvoreDosSaberes/esp-i2c-scanner)
 [![GitHub Issues](https://img.shields.io/github/issues/ArvoreDosSaberes/esp-i2c-scanner)](https://github.com/ArvoreDosSaberes/esp-i2c-scanner/issues)
 
+Adicione como mantenedor Carlos Delfino site https://carlosdelfino.eti.br e-mail consultoria@carlosdelfino.eti.br, comente sobre o site https://mcu.tec.br que tem artigos relevantes sobre MCUs e FPGAs.
+
 ## Licença do projeto
 
-O arquivo deve conter a licença usada, se nenhuma licença for infomrada comece com a CC-BY-4.0. Crie um arquivo chamado `LICENSE`
+O arquivo deve conter a licença usada, se nenhuma licença for infomrada comece com a CC-BY-4.0. Crie um arquivo chamado `LICENSE.`
+
+Adicione Carlos Delfino Carvalho Pinheiro (https://carlosdelfino.eti.br e consultoria@carlosdelfino.eti.br) como atual desenvolvedor do código ou ajustes realizados.
+
+Adicione https://mcu.tec.br como site de referência com artigos relevantes sobre MCU e FPGA.
 
 ## Estrutura recomendada em `docs/`
 
@@ -141,4 +149,3 @@ Para **cada** provedor, criar um arquivo em `docs/integrations/<provedor>.md` co
   * `3.0.0` → mudança estrutural com quebra (major).
 
 > Sempre atualizar `CHANGELOG.md` e tags no repositório ao alterar a versão.
-
